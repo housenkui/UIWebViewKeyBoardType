@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import <WebKit/WebKit.h>
 @interface ViewController ()
 
 @end
@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UIWebView *webView  =[[UIWebView alloc]initWithFrame:self.view.bounds];
+    WKWebView *webView  =[[WKWebView alloc]initWithFrame:self.view.bounds];
     
     NSString *path = [[NSBundle mainBundle]pathForResource:@"new_file.html" ofType:nil];
     

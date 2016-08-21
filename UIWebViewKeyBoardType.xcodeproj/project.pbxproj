@@ -13,6 +13,7 @@
 		F57354431D698D2400EA004F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F57354411D698D2400EA004F /* Main.storyboard */; };
 		F57354451D698D2400EA004F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F57354441D698D2400EA004F /* Assets.xcassets */; };
 		F57354481D698D2400EA004F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F57354461D698D2400EA004F /* LaunchScreen.storyboard */; };
+		F57354501D69915700EA004F /* new_file.html in Resources */ = {isa = PBXBuildFile; fileRef = F573544F1D69915700EA004F /* new_file.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		F57354441D698D2400EA004F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F57354471D698D2400EA004F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F57354491D698D2400EA004F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F573544F1D69915700EA004F /* new_file.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = new_file.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		F57354371D698D2200EA004F /* UIWebViewKeyBoardType */ = {
 			isa = PBXGroup;
 			children = (
+				F573544F1D69915700EA004F /* new_file.html */,
 				F573543B1D698D2300EA004F /* AppDelegate.h */,
 				F573543C1D698D2400EA004F /* AppDelegate.m */,
 				F573543E1D698D2400EA004F /* ViewController.h */,
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F57354481D698D2400EA004F /* LaunchScreen.storyboard in Resources */,
+				F57354501D69915700EA004F /* new_file.html in Resources */,
 				F57354451D698D2400EA004F /* Assets.xcassets in Resources */,
 				F57354431D698D2400EA004F /* Main.storyboard in Resources */,
 			);
@@ -265,10 +269,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: zhongwang wei (DYB9RA3P35)";
 				INFOPLIST_FILE = UIWebViewKeyBoardType/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = YItong.UIWebViewKeyBoardType;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gxnxydyx.03;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "6f365af7-4878-4070-a0a7-d80e9fc89225";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -278,8 +285,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = UIWebViewKeyBoardType/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = YItong.UIWebViewKeyBoardType;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gxnxydyx.03;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};

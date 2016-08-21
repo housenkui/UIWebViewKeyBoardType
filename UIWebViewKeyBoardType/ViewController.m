@@ -16,6 +16,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    UIWebView *webView  =[[UIWebView alloc]initWithFrame:self.view.bounds];
+    
+    NSString *path = [[NSBundle mainBundle]pathForResource:@"new_file.html" ofType:nil];
+    
+    NSURL *url  =[NSURL fileURLWithPath:path];
+    
+    [webView loadRequest:[NSURLRequest requestWithURL:url]];
+    
+    
+    [self.view addSubview:webView];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
